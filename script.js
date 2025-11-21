@@ -59,7 +59,7 @@ function addEntry() {
     
     // The running total column
     const totalCell = newRow.insertCell(4);
-    totalCell.textContent = '$' + currentTotal.toFixed(2);
+    totalCell.textContent = 'Rs' + currentTotal.toFixed(2);
     totalCell.style.fontWeight = 'bold'; // Emphasize the running total
 
     // Update the main total display
@@ -75,10 +75,10 @@ function initializeTracker() {
     const initialRow = tableBody.insertRow();
     initialRow.insertCell(0).textContent = new Date().toLocaleDateString('en-GB');
     initialRow.insertCell(1).textContent = 'START';
-    initialRow.insertCell(2).textContent = '$0.00';
+    initialRow.insertCell(2).textContent = 'Rs.0.00';
     initialRow.insertCell(3).textContent = 'N/A';
     const totalCell = initialRow.insertCell(4);
-    totalCell.textContent = '$0.00';
+    totalCell.textContent = 'Rs.0.00';
     totalCell.style.fontWeight = 'bold';
 }
 
